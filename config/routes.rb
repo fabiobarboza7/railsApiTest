@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	# POST /premises GET /premises
+  resources :premises, only: [:index, :create]
+
+  # GET /premises/:premise_id/stations
+  resources :premises, only: [:show] do
+  	resources :stations, only: [:index]
+  end
+
+  # POST /v1/stations
+  namespace :v1 do
+  	resources :stations, only: [:create]
+  end
+
 end
