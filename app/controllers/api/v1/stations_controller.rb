@@ -1,12 +1,12 @@
 class Api::V1::StationsController < ApplicationController
 
 	def index
-		@stations = Station.all
-		render json: @stations
+		@premise = Premise.find(params[:premise_id])
+		render json: @premise.stations
 	end
 
 	def create
-		@station = Station.new(premise_params)
+		@station = Station.new(station_params)
 
 		if @station.save
 			render json: @station, status: :created
@@ -18,8 +18,8 @@ class Api::V1::StationsController < ApplicationController
 
 	private
 
-	def premise_params
-		params.require(:premise).permit(:serial, :name, :premise_id)
+	def station_params
+		params.require(:station).permit(:serial, :name, :premise_id)
 	end
 
 end

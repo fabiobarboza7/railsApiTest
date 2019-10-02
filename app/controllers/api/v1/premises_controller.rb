@@ -1,5 +1,4 @@
 class Api::V1::PremisesController < ApplicationController
-
 	def index
 		@premises = Premise.all
 		render json: @premises
