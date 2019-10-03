@@ -6,7 +6,8 @@ Developing a RoR RESTful API. Check it out in production!
 GET https://rentbrella.herokuapp.com/api/v1/premises
 GET https://rentbrella.herokuapp.com/api/v1//:premise_id/stations
 
-
+POST https://rentbrella.herokuapp.com/api/v1/premises
+POST https://rentbrella.herokuapp.com/api/v1/stations
 
 
 ## Iniciando
