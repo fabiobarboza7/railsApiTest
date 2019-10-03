@@ -30,6 +30,11 @@ Subindo o servidor local:
 
 > docker-compose up
 ```
+### Testes
+
+```
+> docker-compose run --rm website bundle exec rspec
+```
 
 ### Acessando a api
 ```
