@@ -1,24 +1,41 @@
-# README
+# Nome do projeto
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descrição:
+Boilerplate padrão para construção de apis em nodejs do time DevÁgil.
 
-Things you may want to cover:
+## Print:
+Um print do sistema.
 
-* Ruby version
+## Iniciando
 
-* System dependencies
+### Pré-requisitos
 
-* Configuration
+- Rails
+- Docker
+- Postman || Insomnia
 
-* Database creation
+### Rodando
+```
+> 
+```
 
-* Database initialization
+### Acessando a api
+```
+localhost:3000
+```
 
-* How to run the test suite
+### Rotas
+```
+GET  /api/v1/premises
+POST /api/v1/premises
 
-* Services (job queues, cache servers, search engines, etc.)
+GET  /api/v1/stations
+POST /api/v1/stations
 
-* Deployment instructions
+GET  /api/v1/premises/:premise_id/stations
+```
 
-* ...
+## Autor
+
+* **Fábio Souza - fabiobarboza7@hotmail.com**
+
