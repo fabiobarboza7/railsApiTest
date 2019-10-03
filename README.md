@@ -1,10 +1,13 @@
 # Nome do projeto
 
 ## Descrição:
-Boilerplate padrão para construção de apis em nodejs do time DevÁgil.
+Developing a RoR RESTful API. Check it out in production!
 
-## Print:
-Um print do sistema.
+GET https://rentbrella.herokuapp.com/api/v1/premises
+GET https://rentbrella.herokuapp.com/api/v1//:premise_id/stations
+
+
+
 
 ## Iniciando
 
@@ -16,7 +19,16 @@ Um print do sistema.
 
 ### Rodando
 ```
-> 
+Clone o repositório
+Acesse o Docker
+
+> docker-compose run --rm website bundle install
+> docker-compose run --rm website bundle exec rake db:create
+> docker-compose run --rm website bundle exec rake db:migrate
+
+Subindo o servidor local:
+
+> docker-compose up
 ```
 
 ### Acessando a api
@@ -25,14 +37,18 @@ localhost:3000
 ```
 
 ### Rotas
+
 ```
+Premises
+
 GET  /api/v1/premises
 POST /api/v1/premises
 
-GET  /api/v1/stations
-POST /api/v1/stations
+Stations
 
 GET  /api/v1/premises/:premise_id/stations
+POST /api/v1/stations
+
 ```
 
 ## Autor

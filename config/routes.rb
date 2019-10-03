@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       	resources :stations, only: [:index]
       end
       resources :premises, only: [:index, :create]
-  	  resources :stations, only: [:index, :create]
+  	  resources :stations, only: [:create]
     end
   end
 
